@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Card</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Sansation:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+        *{
+             font-family: "Sansation", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-color: rgb(244,208,78);
+        }
+        .box{
+            width:290px;
+            height:400px;
+            margin:auto;
+            margin-top: 40px;
+            background-color: white;
+            border:1px solid black;
+            border-radius: 10px;
+            box-shadow:5px 5px 0px 3px black;
+        }
+        .box img{
+            max-width: 90%;
+            margin: 10px 15px;
+        }
+        .category{
+            display: flex;
+            flex-direction: column;
+            margin-left: 20px;
+            gap:15px;
+            
+        }
+        .category p:nth-child(1){
+            padding:1px 5px;
+            width:50px;
+            height:15px;
+            background-color: rgb(244,208,78);
+            border-radius: 2px;
+            font-size: 12px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .category p:nth-child(2){
+            font-size: 10px;
+
+        }
+        .category p:nth-child(3){
+            font-family: sans-serif;
+            font-size: 19px;
+            font-weight: bold;
+        }
+        .category p:nth-child(4){
+            color:grey;
+            font-size: 15px;
+        }
+        footer{
+            margin-top: 15px;
+            display: flex;
+            align-items: center;
+        
+        }
+        @media(max-width:810px){
+            .box{
+                margin-top: 90px;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="Blog Image.png" alt="Blog image"  >
+        <div class="category">
+            <p>Learning</p>
+            <p>Published 21 Dec 2023</p>
+            <p>HTML & CSS Foundations</p>
+            <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        </div>
+        <footer>
+            <img src="userpic.png" alt="Logo">
+            <p>Greg Hooper</p>
+        </footer>
+    </div>
+</body>
+</html>
