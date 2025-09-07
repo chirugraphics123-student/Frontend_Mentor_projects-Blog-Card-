@@ -15,6 +15,7 @@
             background-color: rgb(244,208,78);
         }
         .box{
+            cursor: pointer;
             width:290px;
             height:400px;
             margin:auto;
@@ -23,6 +24,7 @@
             border:1px solid black;
             border-radius: 10px;
             box-shadow:5px 5px 0px 3px black;
+            
         }
         .box img{
             max-width: 90%;
@@ -53,6 +55,7 @@
             font-family: sans-serif;
             font-size: 19px;
             font-weight: bold;
+            transition: all 0.25s ease-in;
         }
         .category p:nth-child(4){
             color:grey;
@@ -62,6 +65,10 @@
             margin-top: 15px;
             display: flex;
             align-items: center;
+        
+        }
+        .box:hover .category p:nth-child(3){
+            color:rgb(244,208,78);
         
         }
         @media(max-width:810px){
